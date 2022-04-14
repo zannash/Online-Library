@@ -63,6 +63,9 @@ body {
     padding: 0.8rem 1.6rem;
     cursor: pointer;
 }
+.btn:hover,.btn:active {
+    background-color: #ad4a1f;
+}
 .btn-lg {
     font-weight: 500;
     color: #fbefe9;

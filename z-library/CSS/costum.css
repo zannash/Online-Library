@@ -55,7 +55,7 @@
 /*---Hero Section Start---*/
 .hero {
 
-    height: 100vh;
+    /* height: 90vh; */
     background-image: linear-gradient( to left bottom ,rgba(0, 0, 0, 0.963), rgba(3, 3, 3, 0.662)),
     url("../Images/large.jpg");
     background-size: cover;
@@ -165,7 +165,7 @@
    max-width: 100%;
 }
 .pb-card img:hover {
-    transform: translateY(-2rem);
+    transform: translateY(-1rem);
     transition: all 0.4s;
     cursor: pointer;
    
@@ -410,7 +410,7 @@ form {
 }
 .cta-body input {
     border: none;
-    background-color: #eb984e;
+    background-color: #fdf2e9;
     color: #05090e;
 
 }
@@ -453,13 +453,16 @@ form {
     gap: 1.6rem;
 }
 .footer-item-header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
     font-weight: 600;
  }
  .footer-item-header .logo {
      text-decoration: none;
     font-size: 2.4rem;
     text-transform: uppercase;
-    color: #d85c27;
+    color: #05090e;
     font-weight: 700;
  }
 .footer-item-body {

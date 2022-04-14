@@ -1,4 +1,15 @@
-@media (min-width:87em) {
+@media (min-width:800px) {
+    html {
+       font-size: 50%
+    }
+  .menu-item.btn {
+      font-size: 1.6rem;
+   padding: 0.8rem 0.8rem
+  }
+  .author-card::after { 
+    bottom: 75%;
+}
+
     
 
 }
