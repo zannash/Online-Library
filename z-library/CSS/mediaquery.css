@@ -1,19 +1,272 @@
-@media (max-width:1200px) {
- html {
+@media (min-width:1200px) {
+ /* html {
    font-size: 47%;
+ } */
+ .mobile-nav {
+   display: none;
  }
 
 }
-
-@media (max-width:960px) {
-  .container {
-    width: 90%;
+@media (max-width:1200px) {
+  .mobile-nav {
+    display: none;
   }
+ 
+}
+
+@media (max-width:900px) {
+  .header {
+    padding: 0;
+  }
+  .logo {
+    padding-left: 10rem;
+  }
+  /* .menu-item .btn.nav-btn, .menu-item .btn-outline.nav-btn {
+    font-size: 3.2rem;
+   padding: 0.8rem 1.6rem;
+  } */
+  .pb-lg {
+  padding-bottom: 6.4rem !important;
+  }
+  .pt-lg {
+    padding-top: 6.4rem !important;
+  }
+  .btn-outline {
+    font-weight: 600;
+  }
+
+   .container {
+    width: 90%;
+  } 
+  .mobile-nav {
+   
+    display: block;
+}
+.nav-bar 
+{
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.93);
+    display: flex;
+    align-items: center;
+    color: #222;
+    justify-content: center;
+
+    transition: all 0.3s ease-in-out;
+
+    /*display:none  ose opacity*/
+    /*1.Opacity :0 e bon transparent elementin, mirepo elementi ndodhet ne browser*/
+   opacity: 0;
+    /*2.Set mouse and keyboard to none*/
+   pointer-events: none;
+
+   /*Hide element from screen reader*/
+   visibility: hidden;
+
+   z-index: 9999;
+
 
 }
-@media (max-width:655px) {
-  html {
+.open-nav .nav-bar {
+  /* display: flex; */
+  opacity: 1;
+  pointer-events: auto; /*lejon qe te pointohet me maus ose me keyboard neper elemente */
+  visibility: visible;
+  left: 0%;
+
+}
+.nav .menu-item a{
+  color: #222;
+  font-weight: 600;
+
+}
+.nav .menu-item a:hover {
+  color: #d85c27;
+}
+.nav .menu-item .nav-btn {
+  font-size: 2.4rem;
+  border: 2px solid #d85c27;
+  background-color: transparent;
+
+}
+.open-nav button {
+  right:2.4rem;
+  top: 4.8rem;
+  z-index: 99999;
+}
+.open-nav ion-icon[name="close-outline"] {
+  display: block;
+  position: fixed;
+  top: 5%;
+
+  right: 5%;
+
+}
+.open-nav ion-icon[name="menu-outline"] {
+  display: none;
+}
+.nav-bar .nav {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  gap: 2.4rem;
+}
+.nav-bar .btn {
+  font-size: inherit;
+}
+ 
+
+
+
+ 
+}
+@media (max-width:726px) {
+  /* html {
     font-size: 40%;
+  } */
+  .header {
+    padding: 0;
+    position: relative;
+}
+  /* .header .logo {
+    padding-left: 3rem;
+    padding-right: 1.6rem;
+  
+  } */
+
+  .mobile-nav {
+   
+    display: block;
+}
+.nav-bar 
+{
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.93);
+    display: flex;
+    align-items: center;
+    color: #222;
+    justify-content: center;
+
+    transition: all 0.3s ease-in-out;
+
+    /*display:none  ose opacity*/
+    /*1.Opacity :0 e bon transparent elementin, mirepo elementi ndodhet ne browser*/
+   opacity: 0;
+    /*2.Set mouse and keyboard to none*/
+   pointer-events: none;
+
+   /*Hide element from screen reader*/
+   visibility: hidden;
+
+   z-index: 9999;
+
+
+}
+.open-nav .nav-bar {
+  /* display: flex; */
+  opacity: 1;
+  pointer-events: auto; /*lejon qe te pointohet me maus ose me keyboard neper elemente */
+  visibility: visible;
+  left: 0%;
+
+}
+.nav .menu-item a{
+  color: #222;
+
+}
+.open-nav button {
+  right:2.4rem;
+  top: 4.8rem;
+  z-index: 99999;
+}
+.open-nav ion-icon[name="close-outline"] {
+  display: block;
+  position: fixed;
+  top: 5%;
+
+  right: 5%;
+
+}
+.open-nav ion-icon[name="menu-outline"] {
+  display: none;
+}
+.nav-bar .nav {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  gap: 2.4rem;
+}
+.nav-bar .btn {
+  font-size: inherit;
+}
+ 
+  .info {
+    flex-wrap: wrap;
+    transform: translateY(35%);
   }
+  .pb-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    row-gap: 1.2rem;
+    justify-content: center;
+    column-gap: 0.8rem;
+  }
+  .pb-card {
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .pb-card img {
+    width: 50%;
+  }
+  .pb-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .offers-container {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    
+  }
+  .testimonials-body {
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  
+
+  .offers-card {
+    width: 50%;
+  }
+
+
+}
+
+@media (max-width:510px) {
+  html {
+    font-size: 45%;
+  }
+  .cta-body input {
+    padding: 0.8rem;
+
+  }
+  .offers-footer .btn-outline {
+    font-size: 1.4rem;
+    
+  }
+  .footer-content{
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+  
 
 }

@@ -13,24 +13,31 @@
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/mediaquery.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  
 
     <title>z-Library</title>
 </head>
 <body>
 
-    <header class="header">
+    <header id="header">
+    <div class="header">
         <div class="logo">
             <p>Z-Library</p>
         </div>
         <div class="nav-bar">
-            <ul class="menu">
+            <ul class="nav">
                 <li class="menu-item"> <a href="index.html">Home</a></li>
                 <li class="menu-item"><a href="all-books.html">Books</a></li>
                 <li class="menu-item"><a href="#about-us">About us</a></li>
-                <li class="menu-item search"><input type="text" placeholder="Search.."></li>
-                <li class="menu-item btn-outline " ><a href="login.html">Login</a></li>
-                <li class="menu-item btn"> <a id="signup" href=register.html>SignUp</a>
+                <!-- <li class="menu-item search"><input type="text" placeholder="Search.."></li> -->
+                <li class=" menu-item " ><a class=" btn-outline nav-btn " href="login.html">Login</a></li>
+                <li class="menu-item"> <a class="btn nav-btn"id="signup" href=register.html>SignUp</a>
             </ul>
+        </div>
+        <button class="mobile-nav">
+            <ion-icon class="mobile-nav-icon"name="menu-outline"></ion-icon >
+                <ion-icon name="close-outline" class="mobile-nav-icon close-icon"></ion-icon>         
+             </button>
         </div>
     </header>
     <main>
@@ -163,8 +170,9 @@
                         <a href="" class="pb-link">Read more</a>
                     </div>
                 </div>   
-            
-                    <a href="" class="btn"> View All</a>          
+            <div class="pb-footer">
+                    <a href="" class="btn"> View All</a>    
+                </div>      
 
                </div>
            </div>
@@ -396,6 +404,7 @@
        </div>
         
     </footer>
+    <script src="JS/costum.js"></script>
 
     
 </body>
